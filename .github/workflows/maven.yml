@@ -29,8 +29,9 @@ jobs:
         cache: maven
     - name: Build with Maven
       run:  mvn --batch-mode --update-snapshots verify
-    - name: Deploy to page
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: HTML Preview
+      id: html_preview
+      uses: pavi2410/html-preview-action@v2
       with:
-          folder: ./target/site/serenity/
+        html_file: './target/site/serenity/index.html'
 
