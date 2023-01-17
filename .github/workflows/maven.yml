@@ -34,4 +34,5 @@ jobs:
       with:
         name: code-coverage-report
         path: target/site/serenity/
+        retention-days: 3
 
