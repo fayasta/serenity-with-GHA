@@ -28,10 +28,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run:  mvn --batch-mode --update-snapshots verify
-    - name: HTML Preview
-      id: html_preview
-      uses: pavi2410/html-preview-action@v2
-      with:
-        html_file: './target/site/serenity/index.html'
+      run:  mvn -B verify --file pom.xml
 
