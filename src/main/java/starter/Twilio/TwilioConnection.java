@@ -18,15 +18,15 @@ public class TwilioConnection {
     // Your API key from twilio.com/console/authy/applications
     // DANGER! This is insecure. See http://twil.io/secure
     //public static final String API_KEY = "your_api_key";
-    public static final String ACCOUNT_SID = "ACb381402cc9f206b5581075f62a29f0d5";
-    public static final String AUTH_TOKEN = "caf6ca2a05ca1d56ba2b2741b0d5933f";
+    public static final String ACCOUNT_SID = "";
+    public static final String AUTH_TOKEN = "";
 
     public static final String TWILIO_NUMBER = "+17655236143";
 
 
     //new
-    private static final String API_KEY = "rCVo57YyI8t7NghbRahmoCbFs61FG2eu";
-    private static final String API_URL = "https://api.authy.com/protected/json/sms/767275788";
+    private static final String API_KEY = "";
+    private static final String API_URL = "https://api.authy.com/protected/json/sms/;
 
 
     public static void generateOneTimePassword() {
@@ -34,7 +34,7 @@ public class TwilioConnection {
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         Message message = Message.creator(
                         new PhoneNumber(TWILIO_NUMBER),
-                        new PhoneNumber("+17655236143"),
+                        new PhoneNumber("+"),
                         "One-Time Password: " + oneTimePassword)
                 .create();
 
