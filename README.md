@@ -45,7 +45,7 @@ Appium common issues.
 2. Edit Configuration Template
 2. Select a Cucumber Java
 3. Main class add this: ```net.serenitybdd.cucumber.cli.Main```
-4. Glue add this: ```starter.stepdefinitions``` (This is the location where your stepdefinitions are defined)
+4. Glue add this: ```careviso.stepdefinitions``` (This is the location where your stepdefinitions are defined)
 
 
 GENERAL INFORMATION
